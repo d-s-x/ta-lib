@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TA-Lib</id>
+    <version>0.5.0.3</version>
+    <authors>TicTacTec LLC</authors>
+    <owners>Dmitry Xlestkov</owners>
+    <projectUrl>http://ta-lib.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Technical Analysis Library</summary>
+    <description>Widely used by trading software developers requiring to perform technical analysis of financial market data. Includes 200 indicators such as ADX, MACD, RSI, Stochastic, Bollinger Bands etc... Candlestick pattern recognition. Open-source API for C/C++, Java, Perl, Python and 100% Managed .NET</description>
+    <copyright>Copyright © TicTacTec 2006</copyright>
+    <tags>financial market data analysis</tags>
+  </metadata>
+  <files>
+     <file src="Release\*.dll" target="lib" />
+     <file src="Release\*.pdb" target="lib" />
+     <file src="..\..\c\src\**\*.c" target="src" />
+     <file src="..\..\c\src\**\*.h" target="src" />
+     <file src="Core\**\*.cpp" target="src" />
+     <file src="Core\**\*.h" target="src" />
+  </files>
+</package>

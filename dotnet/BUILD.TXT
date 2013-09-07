@@ -1,0 +1,31 @@
+1) Install Chocolatey
+https://www.nuget.org/packages/chocolatey
+
+To install Chocolatey, run the following command in the Visual Studio Package Manager Console (Tools > Library Package Manager > Package Manager Console)
+(needs NuGet)
+
+PM> Install-Package chocolatey -Pre 
+PM> Initialize-Chocolatey
+
+
+2) Install psake
+
+Run the following command in the Windows Command Line
+CMD> cinst psake
+
+To ensure psake is installed correctly:
+CMD> psake -h
+
+
+3) Build targets
+
+Build sources and make nuget package:
+CMD> build NugetPack
+ OR just
+CMD> build
+
+Build sources (without nuget package):
+CMD> build Build
+
+Push nuget package into nuget repo:
+CMD> build NugetPush
